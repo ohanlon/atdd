@@ -1,0 +1,29 @@
+;===============================================================
+; User can register with email and password.
+;===============================================================
+GIVEN no registered users.
+
+WHEN a user registers with email "bob@example.com" and password "secret123".
+
+THEN there is 1 registered user.
+THEN the user "bob@example.com" can log in.
+
+;===============================================================
+; User cannot register with an already registered email.
+;===============================================================
+GIVEN a user is registered with email "alice@example.com".
+
+WHEN a user tries to register with email "alice@example.com".
+
+THEN the registration fails.
+THEN there is still 1 registered user.
+
+;===============================================================
+; User cannot register with invalid email format.
+;===============================================================
+GIVEN no registered users.
+
+WHEN a user tries to register with email "not-an-email" and password "secret123".
+
+THEN the registration fails.
+THEN there are no registered users.

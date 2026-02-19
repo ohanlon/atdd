@@ -1,0 +1,13 @@
+{
+  "name": "ATDD Pre-Code Write Warning",
+  "version": "1.0.0",
+  "description": "Soft warning when writing code without acceptance specs",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": ["write"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Before writing code, verify that acceptance specs exist in the specs/ directory for this feature. If no specs exist, remind the user that ATDD requires specs before implementation. This is a soft warning - proceed if the user confirms."
+  }
+}

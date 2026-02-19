@@ -1,0 +1,30 @@
+{
+  "name": "atdd",
+  "displayName": "ATDD - Acceptance Test Driven Development",
+  "version": "1.0.0",
+  "description": "Enforces Acceptance Test Driven Development methodology with Given/When/Then specs, test pipelines, and two-stream testing discipline",
+  "keywords": [
+    "atdd",
+    "acceptance testing",
+    "tdd",
+    "test driven development",
+    "given when then",
+    "specs",
+    "behavior driven development",
+    "bdd",
+    "testing",
+    "quality"
+  ],
+  "author": "Converted from swingerman/atdd Claude plugin",
+  "license": "MIT",
+  "steeringFiles": [
+    "atdd-workflow.md",
+    "spec-guardian.md",
+    "pipeline-builder.md",
+    "team-orchestration.md"
+  ],
+  "hooks": [
+    "atdd-pre-code-write.json",
+    "atdd-verify-tests.json"
+  ]
+}

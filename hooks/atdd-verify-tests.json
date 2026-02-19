@@ -1,0 +1,12 @@
+{
+  "name": "ATDD Verify Both Test Streams",
+  "version": "1.0.0",
+  "description": "Reminder to verify both acceptance and unit test streams pass",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Remind the user to verify both test streams pass: 1) Run acceptance tests (./run-acceptance-tests.sh or equivalent), 2) Run unit tests (project's test command). Both streams must be green before the feature is complete."
+  }
+}
